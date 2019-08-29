@@ -823,22 +823,9 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
   # Dump fingerprints
   script.Print("Target: {}".format(target_info.fingerprint))
 
-  #Print ASCII
+
   script.Print("**************************************************");
-  script.Print("**              .--.                            **");
-  script.Print("**             : .; :                           **");
-  script.Print("**             :    : .--.  .--. .---.          **");
-  script.Print("**             : :: :' .; :`._-.': .; `         **");
-  script.Print("**             :_;:_;`.__.'`.__.': ._.'         **");
-  script.Print("**                               : :            **");
-  script.Print("**                               :_;            **");
-  script.Print("** .--.        .-.               .-.         .-.**");
-  script.Print("**: .--'      .' `.              : :         : :**");
-  script.Print("**: `;  .-.,-.`. .'.--. ,-.,-. .-' : .--.  .-' :**");
-  script.Print("**: :__ `.  .' : :' '_.': ,. :' .; :' '_.'' .; :**");
-  script.Print("**`.__.':_,._; :_;`.__.':_;:_;`.__.'`.__.'`.__.'**");
-  script.Print("**************************************************");
-  script.Print("*                By:-TeamAEX                     *");
+  script.Print("*                DisclosureOS                    *");
   script.Print("**************************************************");
   script.Print(" ")
   script.AppendExtra("sleep (2);")
@@ -870,12 +857,12 @@ else if get_stage("%(bcb_dev)s") == "3/3" then
 
   system_progress = 0.75
 
-  if target_info.GetBuildProp("ro.extended.display.version") is not None:
-    buildid = target_info.GetBuildProp("ro.extended.display.version")
+  if target_info.GetBuildProp("ro.disclosure.display.version") is not None:
+    buildid = target_info.GetBuildProp("ro.disclosure.display.version")
     buildidn = target_info.GetBuildProp("ro.build.id")
     buildday = target_info.GetBuildProp("ro.build.date")
     securep = target_info.GetBuildProp("ro.build.version.security_patch")
-    device = target_info.GetBuildProp("ro.aex.device")
+    device = target_info.GetBuildProp("ro.disclosure.device")
     androidver = target_info.GetBuildProp("ro.build.version.release")
     manufacturer = target_info.GetBuildProp("ro.product.manufacturer")
     sdkver = target_info.GetBuildProp("ro.build.version.sdk")
