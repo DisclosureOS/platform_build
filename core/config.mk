@@ -1161,10 +1161,10 @@ $(eval include device/aosp/sepolicy/common/sepolicy.mk)
 -include $(TOPDIR)vendor/*/build/core/apicheck.mk
 
 # Rules for QCOM targets
--include $(TOPDIR)vendor/aosp/build/core/qcom_target.mk
+-include $(TOPDIR)vendor/dos/build/core/qcom_target.mk
 
 # Rules for MTK targets
--include $(TOPDIR)vendor/aosp/build/core/mtk_target.mk
+-include $(TOPDIR)vendor/dos/build/core/mtk_target.mk
 endif
 
 include $(BUILD_SYSTEM)/dumpvar.mk
