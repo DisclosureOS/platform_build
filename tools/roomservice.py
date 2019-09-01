@@ -43,6 +43,10 @@ except ImportError:
 DEBUG = False
 default_manifest = ".repo/manifest.xml"
 
+custom_local_manifest = ".repo/local_manifests/dos_manifest.xml"
+custom_default_revision = "pie"
+custom_dependencies = "dos.dependencies"
+org_display = "DisclosureOS-Devices"  # needed for displaying
 
 github_auth = None
 
